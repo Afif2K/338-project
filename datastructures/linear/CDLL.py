@@ -1,4 +1,4 @@
-from datastructures.linear import DoublyLinkedList
+from datastructures.linear.DLL import DoublyLinkedList
 
 
 class CircularDoublyLinkedList(DoublyLinkedList):
