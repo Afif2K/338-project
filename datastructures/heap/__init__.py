@@ -1,2 +1,4 @@
-from heap.vector_heap import MaxH
-from heap.vector_heap import MinH
+from .vector_heap import MaxH
+from .vector_heap import MinH
+
+__all__ = ['MaxH', 'MinH']

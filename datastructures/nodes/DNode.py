@@ -1,4 +1,4 @@
-import SNode
+from datastructures.nodes.SNode import SNode
 
 
 class DNode(SNode):

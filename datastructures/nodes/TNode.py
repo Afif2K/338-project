@@ -5,6 +5,7 @@ class TNode:
         self.parent = parent
         self.left = left
         self.right = right
+        self.height = 1
 
     # Setters
     def set_data(self, data):

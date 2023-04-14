@@ -1,7 +1,7 @@
-from linear import *
-from nodes import *
-from trees import *
-from heap.vector_heap import MaxH, MinH
+from datastructures.trees import AVLTree, BinarySearchTree
+from datastructures.nodes import SNode, TNode, DNode
+from datastructures.heap import MaxH, MinH
+from datastructures.linear import SinglyLinkedList, DoublyLinkedList, CircularDoublyLinkedList, CircularSinglyLinkedList, Stack, Queue
 
 
 def main():

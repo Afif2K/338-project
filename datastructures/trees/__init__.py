@@ -1,2 +1,4 @@
-from trees.AVL import AVLTree
-from trees.BST import BinarySearchTree
+from .AVL import AVLTree
+from .BST import BinarySearchTree
+
+__all__ = ['AVLTree', 'BinarySearchTree']
