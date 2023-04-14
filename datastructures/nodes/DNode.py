@@ -1,3 +1,6 @@
+import SNode
+
+
 class DNode(SNode):
     def __init__(self, data=None, next_node=None, prev_node=None):
         super().__init__(data, next_node)

@@ -1,3 +1,6 @@
+from nodes.TNode import TNode
+
+
 class BinarySearchTree:
     def __init__(self, root=None):
         self.root = root

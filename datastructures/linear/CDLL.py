@@ -1,3 +1,6 @@
+from DLL import DoublyLinkedList
+
+
 class CircularDoublyLinkedList(DoublyLinkedList):
     def __init__(self, head=None):
         super().__init__(head)

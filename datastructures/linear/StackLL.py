@@ -1,3 +1,6 @@
+from SLL import SinglyLinkedList
+
+
 class Stack(SinglyLinkedList):
     def __init__(self, head=None):
         super().__init__(head)

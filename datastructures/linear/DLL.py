@@ -1,3 +1,7 @@
+from SLL import SinglyLinkedList
+from SLL import Node
+
+
 class DNode(Node):
     def __init__(self, data):
         super().__init__(data)
