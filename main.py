@@ -1,8 +1,4 @@
-from datastructures.trees import AVLTree, BinarySearchTree
-from datastructures.nodes import SNode, DNode
-from datastructures.heap import MaxH, MinH
-from datastructures.linear import SinglyLinkedList, DoublyLinkedList, CircularDoublyLinkedList, CircularSinglyLinkedList, Stack, Queue
-import heapq
+from datastructures import *
 
 
 def main():

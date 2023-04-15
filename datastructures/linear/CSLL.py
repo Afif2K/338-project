@@ -39,3 +39,16 @@ class CircularSinglyLinkedList(SinglyLinkedList):
                 current.next = self.head
                 self.tail = current
                 self.size -= 1
+
+    def print(self):
+        print(f"List length: {self.size}")
+        print(f"Sorted status: {'Yes' if self.is_sorted() else 'No'}")
+        print("List content:")
+        if self.head:
+            current = self.head
+            while True:
+                print(current.data, end=" -> ")
+                current = current.next
+                if current == self.head:
+                    break
+        print("None")
