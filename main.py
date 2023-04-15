@@ -2,6 +2,7 @@ from datastructures.trees import AVLTree, BinarySearchTree
 from datastructures.nodes import SNode, DNode
 from datastructures.heap import MaxH, MinH
 from datastructures.linear import SinglyLinkedList, DoublyLinkedList, CircularDoublyLinkedList, CircularSinglyLinkedList, Stack, Queue
+import heapq
 
 
 def main():
@@ -12,7 +13,6 @@ def main():
     sll.insert_tail(SNode(5))
     sll.insert(SNode(4), 2)
     sll.print()
-    print("Test Count: 1")
 
     # Test DoublyLinkedList
     print("\nTesting DoublyLinkedList:")
@@ -21,25 +21,22 @@ def main():
     dll.insert_tail(DNode(5))
     dll.insert(DNode(4), 2)
     dll.print()
-    print("Test Count: 2")
 
-    # Test CircularSinglyLinkedList
+    # Test CircularSinglyLinkedList *PROBLEM*
     print("\nTesting CircularSinglyLinkedList:")
     csll = CircularSinglyLinkedList()
     csll.insert_head(SNode(3))
     csll.insert_tail(SNode(5))
     csll.insert(SNode(4), 2)
     csll.print()
-    print("Test Count: 3")
 
-    # Test CircularDoublyLinkedList
+    # Test CircularDoublyLinkedList *PROBLEM*
     print("\nTesting CircularDoublyLinkedList:")
     cdll = CircularDoublyLinkedList()
     cdll.insert_head(DNode(3))
     cdll.insert_tail(DNode(5))
     cdll.insert(DNode(4), 2)
     cdll.print()
-    print("Test Count: 4")
 
     # Test Stack
     print("\nTesting Stack:")
@@ -48,7 +45,6 @@ def main():
     stack.push(SNode(2))
     stack.push(SNode(3))
     stack.print()
-    print("Test Count: 5")
 
     # Test Queue
     print("\nTesting Queue:")
@@ -57,7 +53,6 @@ def main():
     queue.enqueue(SNode(2))
     queue.enqueue(SNode(3))
     queue.print()
-    print("Test Count: 6")
 
     # Test Binary Search Tree
     print("\nTesting Binary Search Tree:")
@@ -65,8 +60,7 @@ def main():
     bst.insert(3)
     bst.insert(5)
     bst.insert(4)
-    bst.print()
-    print("Test Count: 7")
+    bst.print_in_order()
 
     # Test AVL Tree
     print("\nTesting AVL Tree:")
@@ -74,8 +68,7 @@ def main():
     avl.insert(3)
     avl.insert(5)
     avl.insert(4)
-    avl.print()
-    print("Test Count: 8")
+    avl.print_bf()
 
     # Test Min Heap and Max Heap
     print("\nTesting Min Heap and Max Heap:")
@@ -87,21 +80,19 @@ def main():
         max_heap.insert(val)
 
     print("Min Heap:")
-    while not min_heap.isEmpty():
-        print(min_heap.delete(), end=" ")
+    while not min_heap.is_empty():
+        print(min_heap.delete(min_heap.elements[0]), end=" ")
     print("\nMax Heap:")
-    while not max_heap.isEmpty():
-        print(max_heap.delete(), end=" ")
-    print("\nTest Count: 9")
+    while not max_heap.is_empty():
+        print(max_heap.delete(max_heap.elements[0]), end=" ")  # *PROBLEM*
 
     # Test heap sort
     print("\n\nTesting heap sort:")
     unsorted_arr = [8, 3, 6, 1, 9, 4]
     heap = MinH(unsorted_arr)
     sorted_arr = heap.sort()
-    print(f"Unsorted array:{unsorted_arr}")
+    print(f"Unsorted array: {unsorted_arr}")
     print(f"Sorted array: {sorted_arr}")
-    print("Test Count: 10")
 
 
 if __name__ == "__main__":
