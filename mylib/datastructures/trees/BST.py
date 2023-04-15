@@ -1,4 +1,4 @@
-from datastructures.nodes.TNode import TNode
+from mylib.datastructures.nodes.TNode import TNode
 
 
 class BinarySearchTree:

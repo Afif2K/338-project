@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pagla-chacha
+Version: 0.2
+Summary: A package that contains multiple data structures
+Home-page: https://github.com/Afif2K/338-project.git
+Author: Touhidul-Afif
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

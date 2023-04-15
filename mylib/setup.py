@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='datastructures',
-    version='0.1',
+    name='pagla-chacha',
+    version='0.2',
     packages=find_packages(),
     description='A package that contains multiple data structures',
     author='Touhidul-Afif',

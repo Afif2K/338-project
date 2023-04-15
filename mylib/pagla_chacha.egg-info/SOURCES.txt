@@ -1,0 +1,5 @@
+setup.py
+pagla_chacha.egg-info/PKG-INFO
+pagla_chacha.egg-info/SOURCES.txt
+pagla_chacha.egg-info/dependency_links.txt
+pagla_chacha.egg-info/top_level.txt

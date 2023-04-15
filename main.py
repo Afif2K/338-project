@@ -1,4 +1,4 @@
-from datastructures import *
+from mylib import *
 
 
 def test_graph_algorithms():
