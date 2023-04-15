@@ -42,3 +42,16 @@ class CircularDoublyLinkedList(DoublyLinkedList):
         if self.head is not None:
             self.tail.next = self.head
             self.head.prev = self.tail
+
+    def print(self):
+        print(f"List length: {self.size}")
+        print(f"Sorted status: {'Yes' if self.is_sorted() else 'No'}")
+        print("List content:")
+        if self.head:
+            current = self.head
+            while True:
+                print(current.data, end=" -> ")
+                current = current.next
+                if current == self.head:
+                    break
+        print("None")
