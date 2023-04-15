@@ -12,3 +12,4 @@ from datastructures.linear.SLL import Node
 from datastructures.linear.StackLL import Stack
 from datastructures.heap.vector_heap import MaxH
 from datastructures.heap.vector_heap import MinH
+from datastructures.Graphalgo.graph import GraphAlgo

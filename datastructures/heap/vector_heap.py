@@ -50,8 +50,9 @@ class Heap:
         self.elements[x], self.elements[y] = self.elements[y], self.elements[x]
 
     def heapify(self, arr):
-        heapq.heapify(arr)
-        self.elements = arr
+        new_arr = arr.copy()
+        heapq.heapify(new_arr)
+        self.elements = new_arr
 
 
 class MinH(Heap):
