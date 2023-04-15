@@ -1,6 +1,27 @@
 from datastructures import *
 
 
+def test_graph_algorithms():
+    graph = {
+        'A': {'B': 1, 'C': 4},
+        'B': {'A': 1, 'C': 2, 'D': 5},
+        'C': {'A': 4, 'B': 2, 'D': 1},
+        'D': {'B': 5, 'C': 1}
+    }
+
+    print("\nTesting BFS:")
+    bfs_result = GraphAlgo.bfs(graph, 'A')
+    print("BFS visited nodes:", bfs_result)
+
+    print("\nTesting DFS:")
+    dfs_result = GraphAlgo.dfs(graph, 'A')
+    print("DFS visited nodes:", dfs_result)
+
+    print("\nTesting Dijkstra's Algorithm:")
+    shortest_path = GraphAlgo.dijkstra(graph, 'A', 'D')
+    print("Shortest path from A to D:", shortest_path)
+
+
 def main():
     # Test SinglyLinkedList
     print("Testing SinglyLinkedList:")
@@ -87,13 +108,8 @@ def main():
         print(value, end=" ")
         value = max_heap.pop()
 
-    # Test heap sort
-    print("\n\nTesting heap sort:")
-    unsorted_arr = [8, 3, 6, 1, 9, 4]
-    heap = MinH(unsorted_arr)
-    sorted_arr = heap.sort()
-    print(f"Unsorted array: {unsorted_arr}")
-    print(f"Sorted array: {sorted_arr}")
+    # Add this line at the end of the main function
+    test_graph_algorithms()
 
 
 if __name__ == "__main__":
