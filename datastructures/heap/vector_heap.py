@@ -25,10 +25,11 @@ class Heap:
     def delete(self, key):
         try:
             idx = self.elements.index(key)
-            self.elements.pop(idx)
+            removed_element = self.elements.pop(idx)
             heapq.heapify(self.elements)
+            return removed_element
         except ValueError:
-            pass
+            return None
 
     def sort(self):
         return heapq.nsmallest(len(self.elements), self.elements)
@@ -70,10 +71,16 @@ class MaxH(Heap):
     def delete(self, key):
         try:
             idx = self.elements.index(-key)
-            self.elements.pop(idx)
+            removed_element = self.elements.pop(idx)
             heapq.heapify(self.elements)
+            return -removed_element
         except ValueError:
-            pass
+            return None
+
+    def pop(self):
+        if not self.is_empty():
+            return -heapq.heappop(self.elements)
+        return None
 
     def sort(self):
         return [-x for x in heapq.nsmallest(len(self.elements), self.elements)]

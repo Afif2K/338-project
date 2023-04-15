@@ -77,10 +77,15 @@ def main():
 
     print("Min Heap:")
     while not min_heap.is_empty():
-        print(min_heap.delete(min_heap.elements[0]), end=" ")
+        value = min_heap.delete(min_heap.elements[0])
+        if value is not None:
+            print(value, end=" ")
+
     print("\nMax Heap:")
-    while not max_heap.is_empty():
-        print(max_heap.delete(max_heap.elements[0]), end=" ")  # *PROBLEM*
+    value = max_heap.pop()
+    while value is not None:
+        print(value, end=" ")
+        value = max_heap.pop()
 
     # Test heap sort
     print("\n\nTesting heap sort:")
