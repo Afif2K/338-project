@@ -1,4 +1,4 @@
-from datastructures.trees import AVLTree
+from datastructures import *
 
 tree = AVLTree()
 tree.insert(5)
