@@ -9,12 +9,13 @@ To install the `libds` library from PyPI, run the following command:
 
 ```bash
 pip install libds
-
+```
 Alternatively, you can clone the GitHub repository and install the package locally:
 git clone https://github.com/Afif2K/338-project.git
+```
 cd libds
 pip install -e .
-
+```
 Usage
 Here is an example of how to use the libds library:
 ```
