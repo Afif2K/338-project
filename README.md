@@ -30,17 +30,17 @@ sll.print()
 ## Data Structures and Algorithms
 The following data structures and algorithms are included in the library:
 
-Singly Linked List
-Doubly Linked List
-Circular Singly Linked List
-Circular Doubly Linked List
-Stack
-Queue
-Binary Search Tree
-AVL Tree
-Min Heap
-Max Heap
-Graph Algorithms
-Breadth-First Search (BFS)
-Depth-First Search (DFS)
+Singly Linked List,
+Doubly Linked List,
+Circular Singly Linked List,
+Circular Doubly Linked List,
+Stack,
+Queue,
+Binary Search Tree,
+AVL Tree,
+Min Heap,
+Max Heap,
+Graph Algorithms,
+Breadth-First Search (BFS),
+Depth-First Search (DFS),
 Dijkstra's Shortest Path Algorithm
