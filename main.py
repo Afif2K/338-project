@@ -1,4 +1,4 @@
-from mylib import *
+from libds import *
 
 
 def test_graph_algorithms():
@@ -39,7 +39,7 @@ def main():
     dll.insert(DNode(4), 2)
     dll.print()
 
-    # Test CircularSinglyLinkedList 
+    # Test CircularSinglyLinkedList
     print("\nTesting CircularSinglyLinkedList:")
     csll = CircularSinglyLinkedList()
     csll.insert_head(SNode(3))
@@ -47,7 +47,7 @@ def main():
     csll.insert(SNode(4), 2)
     csll.print()
 
-    # Test CircularDoublyLinkedList 
+    # Test CircularDoublyLinkedList
     print("\nTesting CircularDoublyLinkedList:")
     cdll = CircularDoublyLinkedList()
     cdll.insert_head(DNode(3))

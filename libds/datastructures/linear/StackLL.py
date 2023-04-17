@@ -1,30 +1,30 @@
-from mylib.datastructures.linear.SLL import SinglyLinkedList
+from libds.datastructures.linear.SLL import SinglyLinkedList
 
 
-class Queue(SinglyLinkedList):
+class Stack(SinglyLinkedList):
     def __init__(self, head=None):
         super().__init__(head)
 
-    def enqueue(self, node):
-        super().insert_tail(node)
+    def push(self, node):
+        super().insert_head(node)
 
-    def dequeue(self):
+    def pop(self):
         if self.head is None:
-            raise IndexError("Queue is empty")
-        dequeued_node = self.head
+            raise IndexError("Stack is empty")
+        popped_node = self.head
         super().delete_head()
-        return dequeued_node
+        return popped_node
 
     def peek(self):
         if self.head is None:
-            raise IndexError("Queue is empty")
+            raise IndexError("Stack is empty")
         return self.head
 
     def is_empty(self):
         return self.head is None
 
-    # Override methods that do not apply to queues with empty bodies
-    def insert_head(self, node):
+    # Override methods that do not apply to stacks with empty bodies
+    def insert_tail(self, node):
         pass
 
     def insert(self, node, position):

@@ -1,5 +1,5 @@
-from mylib.datastructures.linear.SLL import Node
-from mylib.datastructures.linear.SLL import SinglyLinkedList
+from libds.datastructures.linear.SLL import Node
+from libds.datastructures.linear.SLL import SinglyLinkedList
 
 
 class DNode(Node):

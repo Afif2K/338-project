@@ -1,5 +1,5 @@
 from .BST import BinarySearchTree
-from mylib.datastructures.nodes.TNode import TNode
+from libds.datastructures.nodes.TNode import TNode
 
 
 class AVLTree(BinarySearchTree):
