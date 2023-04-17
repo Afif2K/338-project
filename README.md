@@ -16,7 +16,7 @@ git clone https://github.com/Afif2K/338-project.git
 cd libds
 pip install -e .
 ```
-Usage
+## Usage
 Here is an example of how to use the libds library:
 ```
 from libds.datastructures import SinglyLinkedList, SNode
@@ -27,7 +27,7 @@ sll.insert_tail(SNode(5))
 sll.insert(SNode(4), 2)
 sll.print()
 ```
-#Data Structures and Algorithms
+## Data Structures and Algorithms
 The following data structures and algorithms are included in the library:
 
 Singly Linked List
