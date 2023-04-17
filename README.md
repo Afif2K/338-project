@@ -15,7 +15,7 @@ git clone https://github.com/Afif2K/338-project.git
 cd libds
 pip install -e .
 
-#Usage
+Usage
 Here is an example of how to use the libds library:
 ```
 from libds.datastructures import SinglyLinkedList, SNode
